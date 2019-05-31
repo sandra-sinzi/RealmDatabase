@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/Username"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:hint="Username"
+        android:textSize="20dp"
+        android:layout_marginStart="25dp"/>
+    <EditText
+        android:id="@+id/Password"
+        android:layout_below="@id/Username"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textSize="20dp"
+        android:layout_marginStart="25dp"/>
+    <Button
+        android:id="@+id/Register"
+        android:layout_below="@id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register"
+        >
+        <TextView
+            android:id="@+id/display"
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </ScrollView>
+
+</RelativeLayout>
